@@ -1,0 +1,27 @@
+Phần 1 – Phân tích
+
+Trong Spring Boot, khi thêm các thư viện thuộc hệ sinh thái Spring, không cần ghi version vì:
+
+Spring Boot sử dụng Dependency Management (BOM – Bill of Materials)
+
+BOM quy định sẵn version tương thích cho tất cả thư viện
+Khi bạn khai báo dependency → Spring Boot tự gán version phù hợp
+Tránh:
+ - Xung đột version
+ - Không tương thích giữa các thư viện
+
+Spring Boot quản lý version tập trung => bạn không cần khai báo thủ công
+
+Phần 2 – Thực thi
+
+dependencies {
+    // Validation
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // Lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    testCompileOnly 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+}
