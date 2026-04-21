@@ -1,0 +1,15 @@
+Phần 1 – Phân tích
+
+Spring Boot quản lý các cấu hình mặc định thông qua:
+
+Auto-Configuration + Default Properties
+
+Khi ứng dụng chạy, Spring Boot tự nạp các cấu hình mặc định (ví dụ: port = 8080)
+Các giá trị này có thể bị override bằng:
+application.properties
+application.yml
+biến môi trường (environment variables)
+
+Tìm danh sách cấu hình ở:
+- Tài liệu chính thức Spring Boot (Common Application Properties)
+- File metadata trong project:
