@@ -1,0 +1,7 @@
+Đưa cấu hình vào application.properties thay vì hard-code trong Java giúp:
+
+- Dễ bảo trì: đổi tên bệnh viện, hotline chỉ sửa 1 chỗ
+- Tách biệt cấu hình và code (separation of concerns)
+- Dễ deploy nhiều môi trường (dev/test/prod dùng config khác nhau)
+- Không cần build lại code khi đổi config
+- Tránh lặp lại giá trị ở nhiều file, giảm lỗi
