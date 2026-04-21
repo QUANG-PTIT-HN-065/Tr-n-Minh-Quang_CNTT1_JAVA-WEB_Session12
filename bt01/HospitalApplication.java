@@ -1,0 +1,14 @@
+package com.restaurant.session12.bt01;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class HospitalApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(HospitalApplication.class, args);
+
+        System.out.println("Hospital Web Service is ready on Embedded Tomcat!");
+    }
+}

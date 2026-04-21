@@ -1,0 +1,15 @@
+Phần 1 – Phân tích
+Vì sao gọi là “Starter”
+
+spring-boot-starter-web được gọi là Starter vì nó là một gói phụ thuộc tổng hợp (dependency bundle), giúp bạn:
+
+=> Chỉ cần khai báo 1 dependency, Spring Boot sẽ tự kéo theo toàn bộ thư viện cần thiết cho ứng dụng web.
+
+-Nó giúp không phải khai báo thủ công các thư viện:
+Spring MVC (spring-web, spring-webmvc)
+Embedded server (mặc định: Tomcat)
+Jackson (xử lý JSON)
+Validation (hibernate-validator)
+Logging (spring-boot-starter-logging)
+
+=> Nếu không có Starter => bạn phải tự add từng cái => rất dễ thiếu hoặc xung đột version
